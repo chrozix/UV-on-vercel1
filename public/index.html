@@ -1,26 +1,33 @@
-<!DOCTYPE html>
+
 <html>
-    <head>
-        <script src="/uv/uv.bundle.js"></script>
-        <script src="/uv/uv.config.js"></script>
+<head> 
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <link href="index.css" rel="stylesheet">
+  <script src="uv/bundle.js" defer=""></script>
+    <script src="uv/config.js" defer=""></script>
+    <script src="register-sw.js" defer=""></script>
+    <script src="search.js" defer=""></script>
+    <script src="index.js" defer=""></script>
+    <script src="error.js" defer=""></script>
+  <title>chrozap's proxy</title>
+ 
+  <script type='text/javascript' src='//pl25943115.effectiveratecpm.com/98/81/6c/98816c40cb43c53760beb46d4a25c7af.js'></script>
+</head>
+<body>
+<center>
+<h1 id="title">chrozap's proxy</h1>
+<form id="uv-form">
+<input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
+<input id="uv-address" type="text" placeholder="Search Duckduckgo or type a xURL" class="form__input">
+</form>
 
-        <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker.register("/uv/sw.js", {
-                    scope: __uv$config.prefix,
-                });
-            });
-        }
-        </script>
+   <script src="storage/js/cloak.js"></script>
+    <script src="storage/js/background.js"></script>
+    <script src="storage/js/panic.js"></script>
+  <p>Made by chro64</p>
+</center>
 
-        <link rel="stylesheet" href="example.css">
-    </head>
-    <body>
-        <input type="text" id="urlInput" placeholder="Enter URL here">
-        <button id="searchButton">Search Text</button>
 
-        <iframe id="iframeWindow" class="iframeWindow"></iframe>
-    </body>
-    <script src="example.js"></script>
-</html>
+
+</body></html>
